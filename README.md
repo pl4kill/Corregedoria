@@ -47,6 +47,7 @@ Para que as denúncias sejam enviadas para o seu servidor Discord corretamente, 
    - Procure a variável `webhookURL` e cole a URL do Webhook que você copiou anteriormente.
    ```javascript
    const webhookURL = 'Sua_URL_do_Webhook_aqui';
+   const CargosIDs = ["IDCargo", "IDCargo", "etc..."];
 
  ![image](https://github.com/pl4kill/Corregedoria-Web/assets/85031806/c28f38cf-b31d-41ef-99be-b458007267f5)
  
