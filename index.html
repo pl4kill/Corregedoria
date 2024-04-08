@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncias Bombeiros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="dist/simple-notify.min.css" />
+</head>
+<body>
+    <div id="formulario">
+
+        <h1 style="text-align: center;">
+            <p>Bombeiros</p>
+            Denuncia Space 1.0
+        </h1>
+        <form id="denunciaForm" action="#" method="POST" enctype="multipart/form-data">
+            <label for="nome"><b>Nome na Cidade:</b></label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nickname" required><br>
+
+            <label for="identificador"><b>ID:</b></label>
+            <input type="number" name="identificador" id="identificador" class="ent_estilo" placeholder="Digite seu ID"
+                required><br>
+
+            <label for="data"><b>Data do Ocorrido:</b></label>
+            <input type="date" id="data" name="data" placeholder="dd/mm/yyyy" required><br>
+
+            <label for="url"><b>Link denúncia: </b></label>
+            <input type="url" id="url" name="url" placeholder="URL do vídeo ou imagem">
+
+            <label for="media"><b>Ou adicionar imagem ou vídeo no maximo 10mb:</b></label><br>
+            <input type="file" id="media" name="media" accept="image/*, video/*" placeholder=""><br>  
+
+            <label for="descricao"><b>Descrição:</b></label><br>
+            <textarea id="descricao" name="descricao" rows="2" cols="10" placeholder="Resumo breve da denuncia" required></textarea><br>
+            
+            <input type="submit" value="Enviar">
+            <footer>
+                © 2024 Developer Haarley7 - Todos os direitos reservados.
+            </footer>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="dist/simple-notify.min.js"></script>
+</body>
+</html>

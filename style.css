@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset para os elementos de entrada de número */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/img/background.png'); /* Alterar para a nova imagem de fundo */
+    background-size: cover; /* Ajustar a imagem de fundo para cobrir todo o fundo */
+    background-position: center; /* Centralizar a imagem de fundo */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Impedir o rolamento horizontal */
+}
+
+#formulario {
+    width: 90%; /* Reduzir o tamanho do formulário para 90% do espaço disponível */
+    max-width: 600px; /* Definir o tamanho máximo do formulário */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente para o formulário */
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Diminuir a margem inferior para separar o formulário do restante da página */
+    overflow: hidden; /* Impedir o rolamento dentro do formulário */
+}
+
+h1 {
+    text-align: center;
+    color: #b30000; /* Vermelho dos bombeiros */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b30000; /* Vermelho dos bombeiros */
+    /* cursor: pointer; */
+}
+
+a{
+    text-decoration: none;
+    color: #ad0d0de0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+textarea,
+input[type="submit"],
+input[type="file"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b30000; /* Vermelho dos bombeiros */
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: calc(100% - 22px);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: #b30000; /* Vermelho dos bombeiros */
+    color: #fff;
+}
+
+input[type="file"]::before {
+    content: 'Selecionar Arquivo';
+    display: inline-block;
+    padding: 10px 20px;
+    background: #b30000; /* Vermelho dos bombeiros */
+    color: #fff;
+}
+
+input[type="file"]:hover::before {
+    background: #800000; /* Vermelho mais escuro para hover */
+    border-radius: 15px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+input[type="submit"] {
+    background: #b30000; /* Vermelho dos bombeiros */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #800000; /* Vermelho mais escuro para hover */
+}
+
+footer {
+    color: rgb(161, 161, 161);
+    position: relative;
+    text-align: center; /* Centralizar o texto no footer */
+    font-size: 13px;
+    padding: 10px 0px; /* Adicionar espaço interno ao footer */
+    bottom: 0; /* Colocar o footer no final da página */
+    left: 0; /* Alinhar o footer à esquerda */
+}
+
+.btn-success {
+    background-color: #28a745; /* Cor de fundo verde */
+    background: #28a745;
+    color: #fff; /* Cor do texto branco */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Cor de fundo verde escuro no hover */
+}
+
+[data-tooltip] {
+    position: relative;
+    font-weight: bold;
+  }
+  
+  [data-tooltip]:after {
+    display: none;
+    position: absolute;
+    top: -5px;
+    padding: 5px;
+    border-radius: 3px;
+    left: calc(100% + 2px);
+    content: attr(data-tooltip);
+    white-space: nowrap;
+    background-color: #0095ff;
+    color: white;
+  }
+  
+  [data-tooltip]:hover:after {
+    display: block;
+  }
+  
+  
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+    #formulario {
+        width: 90%;
+        margin: 20px; /* Adiciona margem para que o formulário não toque nas bordas da tela */
+    }
+}
